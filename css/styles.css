@@ -24,7 +24,6 @@ table {
     gap: 20px;
 }
 
-
 input:focus {
     border: 2px solid #007bff;
 }
