@@ -2,10 +2,75 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">    
+    <title>Perfil de Usuario</title> <!-- nombre de la pagina para mostar en la pestaña de la web -->
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css"> <!-- Importando estilos de Css , Boostrap -->
+    <link rel="stylesheet" href="css/styles.css"> <!-- importanto estilos de Css, propios --><!-- -->
 </head>
 <body>
-    
+    <div class="container mt -4">
+        <!-- encabezados-->
+        <h1>Perfil de Usuario</h1>
+        <h2>Informacion de Personal</h2>
+        <h3>Datos de Contacto</h3>
+        <!-- inserando imagen de usuario como referencia-->
+        <img src="img/usuario.png" alt="perfil" id="perfil-img" class="round-circle mb-3">
+         <!-- Párrafos y enlaces -->
+        <p id="bio">Hola, doy oscar</p>
+        <a href="https://github.com/" target="_blank">GitHub</a> |
+        <a href="https://www.linkedin.com/" target="_blank">LinkedIn</a>
+
+        <!-- creando Listas ul -->
+        <h3>Habilidades</h3>
+        <ul>
+            <!-- creando items de la Lista -->
+            <li>HTML/CSS</li>
+            <li>JavaScript</li>
+            <li>Bootstrap</li>
+        </ul>
+<!-- creando Listas ol -->
+        <h3>Proyectos</h3>
+
+        <ol>
+            <!-- creando items de la Lista -->
+            <li>Proyecto 1</li>
+            <li>Proyecto 2</li>
+        </ol>
+
+        <!-- creando Tabla -->
+        <h3>Datos Personales</h3>
+        <table class="table table-striped">
+            <tr><th>Nombre</th><td>Oscar Vásquez</td></tr>
+            <tr><th>Email</th><td>oscar@email.com</td></tr>
+            <tr><th>Edad</th><td>28</td></tr>
+        </table>
+
+         <!-- Creacion del Formulario -->
+        <h3>Contacto</h3>
+        <form id="contact-form">
+            <div class="mb-3">
+                <label for="nombre" class="form-label">Nombre:</label>
+                <input type="text" id="nombre" class="form-control">
+            </div>
+            <div class="mb-3">
+                <label for="correo" class="form-label">Correo:</label>
+                <input type="email" id="correo" class="form-control">
+            </div>
+            <div class="mb-3">
+                <label for="mensaje" class="form-label">Mensaje:</label>
+                <textarea id="mensaje" class="form-control"></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Enviar</button>
+        </form>
+
+        <button id="btn-welcome" class="btn btn-success mt-3">Bienvenida</button>
+        <button id="btn-cambiar-fondo" class="btn btn-warning mt-3">Cambiar Fondo</button>
+        <button id="btn-cambiar-texto" class="btn btn-info mt-3">Cambiar Texto</button>
+
+    </div>
+    <script src="js/jquery.min.js"></script>
+    <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="js/script.js"></script>
+
 </body>
 </html>
