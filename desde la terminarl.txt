@@ -1,0 +1,543 @@
+que tal ing. tuve problemas para darle commit no se que pasaba, pero al final lo logre pero forsandolo
+HISTORIAL DE LA LUCHA....
+PS E:\GitHub\1pdw2025> git init 
+Reinitialized existing Git repository in E:/GitHub/1pdw2025/.git/
+PS E:\GitHub\1pdw2025> git add README.md
+PS E:\GitHub\1pdw2025> git commit -m "Actualización 3"
+On branch main
+Your branch is ahead of 'origin/main' by 1 commit.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+PS E:\GitHub\1pdw2025> git push -u origin main        
+To https://github.com/OscarVasquezz/1pdw2025.git
+error: failed to push some refs to 'https://github.com/OscarVasquezz/1pdw2025.git'
+hint: Updates were rejected because the remote contains work that you do not
+hint: have locally. This is usually caused by another repository pushing to
+hint: the same ref. If you want to integrate the remote changes, use
+hint: 'git pull' before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+PS E:\GitHub\1pdw2025> git push -M main       
+error: unknown switch `M'
+usage: git push [<options>] [<repository> [<refspec>...]]
+
+    -v, --[no-]verbose    be more verbose
+    -q, --[no-]quiet      be more quiet
+    --[no-]repo <repository>
+                          repository
+    --[no-]all            push all branches
+    --[no-]branches       alias of --all
+    --[no-]mirror         mirror all refs
+    -d, --[no-]delete     delete refs
+    --[no-]tags           push tags (can't be used with --all or --branches or --mirror)
+    -n, --[no-]dry-run    dry run
+    --[no-]porcelain      machine-readable output
+    -f, --[no-]force      force updates
+    --[no-]force-with-lease[=<refname>:<expect>]
+                          require old value of ref to be at this value
+    --[no-]force-if-includes
+                          require remote updates to be integrated locally
+    --[no-]recurse-submodules (check|on-demand|no)
+                          control recursive pushing of submodules
+    --[no-]thin           use thin pack
+    --[no-]receive-pack <receive-pack>
+                          receive pack program
+    --[no-]exec <receive-pack>
+                          receive pack program
+    -u, --[no-]set-upstream
+                          set upstream for git pull/status
+    --[no-]progress       force progress reporting
+    --[no-]prune          prune locally removed refs
+    --no-verify           bypass pre-push hook
+    --verify              opposite of --no-verify
+    --[no-]follow-tags    push missing but relevant tags
+    --[no-]signed[=(yes|no|if-asked)]
+    --[no-]atomic         request atomic transaction on remote side
+                          option to transmit
+    -4, --ipv4            use IPv4 addresses only
+    -6, --ipv6            use IPv6 addresses only
+
+PS E:\GitHub\1pdw2025> git remote add origin https://github.com/OscarVasquezz/1pdw2025.git
+error: remote origin already exists.
+PS E:\GitHub\1pdw2025> git push -u origin main
+To https://github.com/OscarVasquezz/1pdw2025.git
+error: failed to push some refs to 'https://github.com/OscarVasquezz/1pdw2025.git'
+hint: Updates were rejected because the remote contains work that you do not
+hint: have locally. This is usually caused by another repository pushing to
+hint: the same ref. If you want to integrate the remote changes, use
+hint: 'git pull' before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+PS E:\GitHub\1pdw2025> git pull origin main --rebase
+remote: Enumerating objects: 4, done.
+remote: Counting objects: 100% (4/4), done.
+remote: Total 3 (delta 1), reused 0 (delta 0), pack-reused 0 (from 0)
+Unpacking objects: 100% (3/3), 941 bytes | 3.00 KiB/s, done.
+From https://github.com/OscarVasquezz/1pdw2025
+ * branch            main       -> FETCH_HEAD
+   4c8f516..06a0293  main       -> origin/main
+Successfully rebased and updated refs/heads/main.
+PS E:\GitHub\1pdw2025> git push -u origin main
+Enumerating objects: 9, done.
+Counting objects: 100% (9/9), done.
+Delta compression using up to 4 threads
+Writing objects: 100% (5/5), 592 bytes | 296.00 KiB/s, done.
+Total 5 (delta 1), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/OscarVasquezz/1pdw2025.git
+branch 'main' set up to track 'origin/main'.
+PS E:\GitHub\1pdw2025> git commit -m "Actualización 3"
+On branch main
+Your branch is up to date with 'origin/main'.
+
+nothing to commit, working tree clean
+PS E:\GitHub\1pdw2025> git commit -m "Actualización"  
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   css/styles.css
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        img/
+
+no changes added to commit (use "git add" and/or "git commit -a")
+PS E:\GitHub\1pdw2025> git commit -m "Actualización"
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   css/styles.css
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        img/
+
+no changes added to commit (use "git add" and/or "git commit -a")
+PS E:\GitHub\1pdw2025> git commit -m "Actualización"
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   css/styles.css
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        img/
+
+no changes added to commit (use "git add" and/or "git commit -a")
+PS E:\GitHub\1pdw2025> git commit -m "Actualización"
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   css/styles.css
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        img/
+
+no changes added to commit (use "git add" and/or "git commit -a")
+PS E:\GitHub\1pdw2025> git commit -m "Actualización"
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   css/styles.css
+
+Untracked files:
+        img/
+
+no changes added to commit (use "git add" and/or "git commit -a")
+PS E:\GitHub\1pdw2025> git pull origin main --rebase
+error: cannot pull with rebase: You have unstaged changes.
+error: Please commit or stash them.
+PS E:\GitHub\1pdw2025> git push -M main
+error: unknown switch `M'
+usage: git push [<options>] [<repository> [<refspec>...]]
+
+    -v, --[no-]verbose    be more verbose
+    -q, --[no-]quiet      be more quiet
+    --[no-]repo <repository>
+                          repository
+    --[no-]all            push all branches
+    --[no-]branches       alias of --all
+    --[no-]mirror         mirror all refs
+    -d, --[no-]delete     delete refs
+    --[no-]tags           push tags (can't be used with --all or --branches or --mirror)
+    -n, --[no-]dry-run    dry run
+    --[no-]porcelain      machine-readable output
+    -f, --[no-]force      force updates
+    --[no-]force-with-lease[=<refname>:<expect>]
+                          require old value of ref to be at this value
+    --[no-]force-if-includes
+                          require remote updates to be integrated locally
+    --[no-]recurse-submodules (check|on-demand|no)
+                          control recursive pushing of submodules
+    --[no-]thin           use thin pack
+    --[no-]receive-pack <receive-pack>
+                          receive pack program
+    --[no-]exec <receive-pack>
+                          receive pack program
+    -u, --[no-]set-upstream
+                          set upstream for git pull/status
+    --[no-]progress       force progress reporting
+    --[no-]prune          prune locally removed refs
+    --no-verify           bypass pre-push hook
+    --verify              opposite of --no-verify
+    --[no-]follow-tags    push missing but relevant tags
+    --[no-]signed[=(yes|no|if-asked)]
+    --[no-]atomic         request atomic transaction on remote side
+    -o, --[no-]push-option <server-specific>
+                          option to transmit
+    -4, --ipv4            use IPv4 addresses only
+    -6, --ipv6            use IPv6 addresses only
+
+PS E:\GitHub\1pdw2025> git push -M main
+error: unknown switch `M'
+usage: git push [<options>] [<repository> [<refspec>...]]
+
+    -v, --[no-]verbose    be more verbose
+    -q, --[no-]quiet      be more quiet
+    --[no-]repo <repository>
+                          repository
+    --[no-]all            push all branches
+    --[no-]branches       alias of --all
+    --[no-]mirror         mirror all refs
+    -d, --[no-]delete     delete refs
+    --[no-]tags           push tags (can't be used with --all or --branches or --mirror)
+    -n, --[no-]dry-run    dry run
+    --[no-]porcelain      machine-readable output
+    -f, --[no-]force      force updates
+    --[no-]force-with-lease[=<refname>:<expect>]
+                          require old value of ref to be at this value
+    --[no-]force-if-includes
+                          require remote updates to be integrated locally
+    --[no-]recurse-submodules (check|on-demand|no)
+                          control recursive pushing of submodules
+    --[no-]thin           use thin pack
+    --[no-]receive-pack <receive-pack>
+                          receive pack program
+    --[no-]exec <receive-pack>
+                          receive pack program
+    -u, --[no-]set-upstream
+                          set upstream for git pull/status
+    --[no-]progress       force progress reporting
+    --[no-]prune          prune locally removed refs
+    --no-verify           bypass pre-push hook
+    --verify              opposite of --no-verify
+    --[no-]follow-tags    push missing but relevant tags
+    --[no-]signed[=(yes|no|if-asked)]
+    --[no-]atomic         request atomic transaction on remote side
+    -o, --[no-]push-option <server-specific>
+    -4, --ipv4            use IPv4 addresses only
+    -6, --ipv6            use IPv6 addresses only
+
+PS E:\GitHub\1pdw2025> git pull origin main --rebase
+error: cannot pull with rebase: You have unstaged changes.
+error: Please commit or stash them.
+PS E:\GitHub\1pdw2025> git push -M main
+error: unknown switch `M'
+usage: git push [<options>] [<repository> [<refspec>...]]
+
+    -v, --[no-]verbose    be more verbose
+    -q, --[no-]quiet      be more quiet
+    --[no-]repo <repository>
+                          repository
+    --[no-]all            push all branches
+    --[no-]branches       alias of --all
+    --[no-]mirror         mirror all refs
+    -d, --[no-]delete     delete refs
+    --[no-]tags           push tags (can't be used with --all or --branches or --mirror)
+    -n, --[no-]dry-run    dry run
+    --[no-]porcelain      machine-readable output
+    -f, --[no-]force      force updates
+    --[no-]force-with-lease[=<refname>:<expect>]
+                          require old value of ref to be at this value
+    --[no-]force-if-includes
+                          require remote updates to be integrated locally
+    --[no-]recurse-submodules (check|on-demand|no)
+                          control recursive pushing of submodules
+    --[no-]thin           use thin pack
+    --[no-]receive-pack <receive-pack>
+                          receive pack program
+    --[no-]exec <receive-pack>
+                          receive pack program
+    -u, --[no-]set-upstream
+                          set upstream for git pull/status
+    --[no-]progress       force progress reporting
+    --[no-]prune          prune locally removed refs
+    --no-verify           bypass pre-push hook
+    --verify              opposite of --no-verify
+    --[no-]follow-tags    push missing but relevant tags
+    --[no-]signed[=(yes|no|if-asked)]
+    --[no-]atomic         request atomic transaction on remote side
+    -o, --[no-]push-option <server-specific>
+                          option to transmit
+    -4, --ipv4            use IPv4 addresses only
+    -6, --ipv6            use IPv6 addresses only
+
+PS E:\GitHub\1pdw2025> git commit -m "Actualización"
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   css/styles.css
+
+  (use "git add <file>..." to include in what will be committed)
+        img/
+
+no changes added to commit (use "git add" and/or "git commit -a")
+PS E:\GitHub\1pdw2025> git remote add origin https://github.com/OscarVasquezz/1pdw2025.git
+error: remote origin already exists.
+PS E:\GitHub\1pdw2025> git push -M main
+error: unknown switch `M'
+usage: git push [<options>] [<repository> [<refspec>...]]
+
+    -v, --[no-]verbose    be more verbose
+    -q, --[no-]quiet      be more quiet
+    --[no-]repo <repository>
+                          repository
+    --[no-]all            push all branches
+    --[no-]branches       alias of --all
+    --[no-]mirror         mirror all refs
+    -d, --[no-]delete     delete refs
+    --[no-]tags           push tags (can't be used with --all or --branches or --mirror)
+    -n, --[no-]dry-run    dry run
+    --[no-]porcelain      machine-readable output
+    -f, --[no-]force      force updates
+    --[no-]force-with-lease[=<refname>:<expect>]
+                          require old value of ref to be at this value
+    --[no-]force-if-includes
+                          require remote updates to be integrated locally
+    --[no-]recurse-submodules (check|on-demand|no)
+                          control recursive pushing of submodules
+    --[no-]thin           use thin pack
+    --[no-]receive-pack <receive-pack>
+                          receive pack program
+    --[no-]exec <receive-pack>
+                          receive pack program
+    -u, --[no-]set-upstream
+                          set upstream for git pull/status
+    --[no-]progress       force progress reporting
+    --[no-]prune          prune locally removed refs
+    --no-verify           bypass pre-push hook
+    --verify              opposite of --no-verify
+    --[no-]follow-tags    push missing but relevant tags
+    --[no-]signed[=(yes|no|if-asked)]
+    -o, --[no-]push-option <server-specific>
+                          option to transmit
+    -4, --ipv4            use IPv4 addresses only
+    -6, --ipv6            use IPv6 addresses only
+
+PS E:\GitHub\1pdw2025> git add .
+PS E:\GitHub\1pdw2025> git push -M main
+error: unknown switch `M'
+usage: git push [<options>] [<repository> [<refspec>...]]
+
+    -v, --[no-]verbose    be more verbose
+    -q, --[no-]quiet      be more quiet
+    --[no-]repo <repository>
+                          repository
+    --[no-]all            push all branches
+    --[no-]branches       alias of --all
+    --[no-]mirror         mirror all refs
+    -d, --[no-]delete     delete refs
+    --[no-]tags           push tags (can't be used with --all or --branches or --mirror)
+    -n, --[no-]dry-run    dry run
+    --[no-]porcelain      machine-readable output
+    -f, --[no-]force      force updates
+    --[no-]force-with-lease[=<refname>:<expect>]
+                          require old value of ref to be at this value
+    --[no-]force-if-includes
+                          require remote updates to be integrated locally
+    --[no-]recurse-submodules (check|on-demand|no)
+                          control recursive pushing of submodules
+    --[no-]thin           use thin pack
+    --[no-]receive-pack <receive-pack>
+                          receive pack program
+    --[no-]exec <receive-pack>
+                          receive pack program
+    -u, --[no-]set-upstream
+                          set upstream for git pull/status
+    --[no-]progress       force progress reporting
+    --[no-]prune          prune locally removed refs
+    --no-verify           bypass pre-push hook
+    --verify              opposite of --no-verify
+    --[no-]follow-tags    push missing but relevant tags
+    --[no-]signed[=(yes|no|if-asked)]
+    -o, --[no-]push-option <server-specific>
+                          option to transmit
+    -4, --ipv4            use IPv4 addresses only
+
+PS E:\GitHub\1pdw2025> git add .
+PS E:\GitHub\1pdw2025> git commit -m "Actualización"
+[main 3fb2df7] Actualización
+ 3 files changed, 98 insertions(+), 3 deletions(-)
+ create mode 100644 img/usuario.png
+PS E:\GitHub\1pdw2025> git push -M main
+error: unknown switch `M'
+usage: git push [<options>] [<repository> [<refspec>...]]
+
+    -v, --[no-]verbose    be more verbose
+    -q, --[no-]quiet      be more quiet
+    --[no-]repo <repository>
+                          repository
+    --[no-]all            push all branches
+    --[no-]branches       alias of --all
+    --[no-]mirror         mirror all refs
+    -d, --[no-]delete     delete refs
+    --[no-]tags           push tags (can't be used with --all or --branches or --mirror)
+    -n, --[no-]dry-run    dry run
+    --[no-]porcelain      machine-readable output
+    -f, --[no-]force      force updates
+    --[no-]force-with-lease[=<refname>:<expect>]
+                          require old value of ref to be at this value
+    --[no-]force-if-includes
+                          require remote updates to be integrated locally
+    --[no-]recurse-submodules (check|on-demand|no)
+                          control recursive pushing of submodules
+    --[no-]thin           use thin pack
+    --[no-]receive-pack <receive-pack>
+                          receive pack program
+    --[no-]exec <receive-pack>
+                          receive pack program
+    -u, --[no-]set-upstream
+                          set upstream for git pull/status
+    --[no-]progress       force progress reporting
+    --[no-]prune          prune locally removed refs
+    --no-verify           bypass pre-push hook
+    --verify              opposite of --no-verify
+    --[no-]follow-tags    push missing but relevant tags
+    --[no-]signed[=(yes|no|if-asked)]
+    --[no-]atomic         request atomic transaction on remote side
+    -o, --[no-]push-option <server-specific>
+                          option to transmit
+    -4, --ipv4            use IPv4 addresses only
+    -6, --ipv6            use IPv6 addresses only
+PS E:\GitHub\1pdw2025> git push -u prigin  main
+fatal: 'prigin' does not appear to be a git repository
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+On branch main
+Your branch is ahead of 'origin/main' by 1 commit.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+PS E:\GitHub\1pdw2025> git commit -m "Actualización"
+On branch main
+Your branch is ahead of 'origin/main' by 1 commit.
+  (use "git push" to publish your local commits)
+
+PS E:\GitHub\1pdw2025> git push -u prigin  main     
+fatal: 'prigin' does not appear to be a git repository
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+PS E:\GitHub\1pdw2025> git commit -m "primercomit"
+On branch main
+Your branch is ahead of 'origin/main' by 1 commit.
+  (use "git push" to publish your local commits)
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   css/styles.css
+
+fatal: 'prigin' does not appear to be a git repository
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+PS E:\GitHub\1pdw2025> git push -u prigin  main
+fatal: Could not read from remote repository.
+
+and the repository exists.
+PS E:\GitHub\1pdw2025> git remote add origin https://github.com/OscarVasquezz/1pdw2025.git
+error: remote origin already exists.
+PS E:\GitHub\1pdw2025> git pull origin main --rebase
+error: cannot pull with rebase: Your index contains uncommitted changes.
+fatal: 'prigin' does not appear to be a git repository
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+PS E:\GitHub\1pdw2025> git add .
+PS E:\GitHub\1pdw2025> git status
+On branch main
+  (use "git push" to publish your local commits)
+
+  (use "git restore --staged <file>..." to unstage)
+PS E:\GitHub\1pdw2025> git commit -m "comit-final"
+[main 27355a7] comit-final
+ 1 file changed, 1 deletion(-)
+PS E:\GitHub\1pdw2025> git init
+Reinitialized existing Git repository in E:/GitHub/1pdw2025/.git/
+PS E:\GitHub\1pdw2025> git add .
+PS E:\GitHub\1pdw2025> git commit -m "comit-final"
+[main 43306eb] comit-final
+ 1 file changed, 17 insertions(+)
+PS E:\GitHub\1pdw2025> git commit -m "comit-final2"
+On branch main
+Your branch is ahead of 'origin/main' by 3 commits.
+  (use "git push" to publish your local commits)
+
+PS E:\GitHub\1pdw2025> git status
+On branch main
+Your branch is ahead of 'origin/main' by 3 commits.
+  (use "git push" to publish your local commits)
+
+fatal: 'prigin' does not appear to be a git repository
+Please make sure you have the correct access rights
+and the repository exists.
+PS E:\GitHub\1pdw2025> git add .
+PS E:\GitHub\1pdw2025> git init
+Reinitialized existing Git repository in E:/GitHub/1pdw2025/.git/
+PS E:\GitHub\1pdw2025> git commit -m "comit-final3"
+Your branch is ahead of 'origin/main' by 3 commits.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+PS E:\GitHub\1pdw2025> git remote add origin https://github.com/OscarVasquezz/1pdw2025.git
+On branch main
+Your branch is ahead of 'origin/main' by 3 commits.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+On branch main
+Your branch is ahead of 'origin/main' by 3 commits.
+
+nothing to commit, working tree clean
+PS E:\GitHub\1pdw2025> git add .
+PS E:\GitHub\1pdw2025> git commit -m "comit-final6"
+[main 3e0632d] comit-final6
+PS E:\GitHub\1pdw2025> git status
+On branch main
+Your branch is ahead of 'origin/main' by 4 commits.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+PS E:\GitHub\1pdw2025> git push origin main --force
+Enumerating objects: 22, done.
+Counting objects: 100% (21/21), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (14/14), done.
+Writing objects: 100% (17/17), 75.31 KiB | 9.41 MiB/s, done.
+Total 17 (delta 6), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (6/6), done.
+To https://github.com/OscarVasquezz/1pdw2025.git
+   143a205..3e0632d  main -> main
+PS E:\GitHub\1pdw2025>
